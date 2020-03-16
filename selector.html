@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Selector</title>
+	<style type="text/css">
+		/*Universal Selector*/
+		*{
+			background-color: pink;
+			margin: 0;
+			padding: 0;
+
+		}
+		/*ID selector*/
+		#para1{
+			color: brown;
+
+		}
+		#para2{
+			font-size: 20px;
+
+		}
+		/*Class selector*/
+		.clas{
+			color: green;
+
+		}
+		/*Element Selector*/
+		h1{
+			font-size: 50px;
+		}
+		/*Group Selector*/
+		h1,p,a,span{
+			font-size: 30px;
+
+		}
+		/*Attribute Selector*/
+		p[title="para"]{
+			font-size: 20px;
+			color: blue;
+		}
+		/*Descendant Selector*/
+		p a{
+			color: yellow;
+		}
+		p>a{
+			color: lavender;
+		}
+	</style>
+</head>
+<body>
+	<h1>Hello Japanese Bootcamper!</h1>
+
+	<p id="para1"> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<span class="clas">consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat </span>
+	non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<h1 class="clas"> Good Morning</h1>
+	<h1 class="clas">Helllo Everyone</h1>
+	<h1 class="clas">Hello CSS Lesson</h1>
+
+	<p title="para">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+	<p title="para">ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. <a href="">Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. <span><a href="">Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore </a></span>eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>
